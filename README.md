@@ -6,10 +6,10 @@
 <section>
 <h2><b>Descrição do Projeto</b></h2>
 
-Funciona com uma coleção do banco de dados - Mongo DB.
+Faaaalaaaa, primeiramente queria dizer que esse projeto funciona com uma coleção do banco de dados MongoDB.
 
 <p>
-O projeto 'Autenticação JWT - API REST' foi criado apenas como uma evolução do meu projeto anterior 'Biblioteca', onde esse projeto antigo é uma API REST, porém sem tecnologias como autentucação de usuário e criptografia, por exemplo. Seu propósito é continuar na evolução da minha criação de API's. Não sei se vai funcionar como uma biblioteca, vou fazendo alterações conforme for desenvolvendo.
+O projeto 'Autenticação JWT - API REST' foi criado apenas como uma evolução do meu projeto anterior 'Biblioteca', onde esse projeto antigo é uma API REST, porém sem tecnologias como autentucação de usuário e criptografia, por exemplo. Seu propósito é continuar na evolução da minha criação de API's, ou seja, ele também é uma API REST, do mesmo formato que a anterior, pois com adições, melhorias e uma mudança na arquitetura. Não sei se vai funcionar como uma biblioteca, vou fazendo alterações conforme for desenvolvendo.
 </p><br>
 </section>
 
@@ -47,6 +47,11 @@ No proejto, contém um arquivo .env, onde ele guarda informações de login do a
 Segunda:
 </h3>
 O projeto não possui frontend, ele é apenas backend onde é possivel utilizar em programas que dão suporte ás requisições feitas pela API, como o postman. Por enquanto não pretendo fazer frontend para o projeto.
+
+<h3>
+Terceira:
+</h3>
+O modo como chamados módulos entre arquivos é o 'antigo' - exemplo: const express = require('express') - porém irei mudar conforme for atualizando o projeto, pode ficar tranquilo :)
 </section>
 
 
