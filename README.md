@@ -36,8 +36,8 @@ Dependências: mongoose, bcrypt, dotenv, jsonwebtoken, nodemon e express
 </section>
 
 <section>
-<h3>Atualizações</h3>
- 27/09/2023 - Começando implementação do cadastro de usuários
+<h2>Atualizações</h2>
+ <h3>27/09/2023</h3>h3> - Começando implementação do cadastro de usuários
 </section>
 
 <section>
