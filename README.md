@@ -38,6 +38,7 @@ Dependências: mongoose, bcrypt, dotenv, jsonwebtoken, nodemon e express
 <section>
 <h2>Atualizações</h2>
  <h3>27/09/2023</h3> - Começando implementação do cadastro de usuários
+ <h3>29/09/2023</h3> - Cadastro feito, criptografia das senhas e começando o login dos usuários.
 </section>
 
 <section>
@@ -45,7 +46,7 @@ Dependências: mongoose, bcrypt, dotenv, jsonwebtoken, nodemon e express
 <h3>
 Primeira:
 </h3>
-No proejto, contém um arquivo .env, onde ele guarda informações de login do administrador, porém esse arquivo está oculto no .gitignore
+No projeto, contém um arquivo .env, onde ele guarda informações de login do administrador, porém esse arquivo está oculto no .gitignore
 <br>
 
 <h3>
@@ -56,7 +57,7 @@ O projeto não possui frontend, ele é apenas backend onde é possivel utilizar 
 <h3>
 Terceira:
 </h3>
-O modo como chamados módulos entre arquivos é o 'antigo' - exemplo: const express = require('express') - porém irei mudar conforme for atualizando o projeto, pode ficar tranquilo :)
+O modo como os módulos são chamados entre arquivos é o 'antigo' - exemplo: const express = require('express') - porém irei mudar conforme for atualizando o projeto, pode ficar tranquilo :)
 </section>
 
 
