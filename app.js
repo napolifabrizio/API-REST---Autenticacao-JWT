@@ -17,15 +17,23 @@ app.get("/", (req, res) => {
 app.post("/auth/register", async (req, res) => {
   const { name, email, password, confirmPassword } = req.body;
 
-  if (!name) return res.status(422).json({ msg: "Nome inválido" });
-  if (!email) return res.status(422).json({ msg: "Email inválido" });
-  if (!password) return res.status(422).json({ msg: "Senha inválida" });
-  if (confirmPassword != password)
+  if (!name) {
+    return res.status(422).json({ msg: "Nome inválido" });
+  }
+  if (!email) {
+    return res.status(422).json({ msg: "Email inválido" });
+  }
+  if (!password) {
+    return res.status(422).json({ msg: "Senha inválida" });
+  }
+  if (confirmPassword != password) {
     return res.status(422).json({ msg: "As senhas não batem" });
+  }
 
   const userExists = await User.findOne({ email });
-  if (userExists)
+  if (userExists) {
     return res.status(422).json({ msg: "Esse email já possui um cadastro" });
+  }
 
   const salt = await bcrypt.genSalt(12);
   const passwordHash = await bcrypt.hash(password, salt);
@@ -46,11 +54,40 @@ app.post("/auth/register", async (req, res) => {
 });
 
 app.post("auth/login", async (req, res) => {
-  const {password, email} = req.body;
+  const { password, email } = req.body;
 
-  if (!email) return res.status(422).json({ msg: "Email inválido" });
-  if (!password) return res.status(422).json({ msg: "Senha inválida" });
+  if (!email) {
+    return res.status(422).json({ msg: "Email inválido" });
+  }
+  if (!password) {
+    return res.status(422).json({ msg: "Senha inválida" });
+  }
 
+  const user = await User.findOne({ email });
+  if (!user) {
+    return res.status(404).json({ msg: "Usuário não encontrado" });
+  }
+
+  const checkPassword = await bcrypt.compare(password, user.password);
+
+  if (!checkPassword) {
+    return res.status(422).json({ msg: "Senha inválida" });
+  }
+
+  try {
+    const secret = process.env.SECRET;
+    const token = jwt.sign(
+      {
+        id: user._id,
+      },
+      secret
+    );
+
+    res.status(200).json({ msg: "Autenticação feita com sucesso" }, token);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ msg: "Ocorreu um erro no servidor" });
+  }
 });
 
 const dbUser = process.env.DB_USER;
