@@ -1,18 +1,16 @@
 import express from "express";
-import mongoose from "mongoose";
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken";
+import db from "./Config/dbConnect.js";
 
 import dotenv from 'dotenv';
 dotenv.config();
 
-import User from "./models/User.js";
+import User from "../models/User.js";
 
 const app = express();
 
 app.use(express.json());
-
-// const User = require("./models/User");
 
 app.get("/", (req, res) => {
   res.status(200).json({ msg: "Bem vindo a nossa API" });
@@ -124,13 +122,9 @@ app.post("/auth/login", async (req, res) => {
   }
 });
 
-const dbUser = process.env.DB_USER;
-const dbPass = process.env.DB_PASS;
+db.on("error", console.log.bind(console, "Erro de conexão"));
+db.once("open", () => {
+  console.log("Banco conectado!!");
+});
 
-mongoose
-  .connect(`mongodb+srv://${dbUser}:${dbPass}@cluester0.hde5qpu.mongodb.net/`)
-  .then(() => {
-    app.listen(3000);
-    console.log("Deu certooo, conectou ao bancoooo caracaaa!!");
-  })
-  .catch((err) => console.log(err));
+export default app;
