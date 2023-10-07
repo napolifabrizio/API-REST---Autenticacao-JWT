@@ -6,7 +6,7 @@ import db from "./Config/dbConnect.js";
 import dotenv from 'dotenv';
 dotenv.config();
 
-import User from "../models/User.js";
+import User from "./Models/User.js";
 
 const app = express();
 
