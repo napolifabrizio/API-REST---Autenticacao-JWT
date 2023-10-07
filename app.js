@@ -1,14 +1,18 @@
-require("dotenv").config();
-const express = require("express");
-const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
+import express from "express";
+import mongoose from "mongoose";
+import bcrypt from "bcrypt"
+import jwt from "jsonwebtoken";
+
+import dotenv from 'dotenv';
+dotenv.config();
+
+import User from "./models/User.js";
 
 const app = express();
 
 app.use(express.json());
 
-const User = require("./models/User");
+// const User = require("./models/User");
 
 app.get("/", (req, res) => {
   res.status(200).json({ msg: "Bem vindo a nossa API" });
