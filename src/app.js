@@ -1,13 +1,6 @@
 import express from "express";
-import bcrypt from "bcrypt"
-import jwt from "jsonwebtoken";
 import db from "./Config/dbConnect.js";
 import UsuarioController from "./Controllers/ControllerUsuario.js";
-
-import dotenv from 'dotenv';
-dotenv.config();
-
-import User from "./Models/User.js";
 
 const app = express();
 
