@@ -58,11 +58,6 @@ Segunda:
 </h3>
 O projeto não possui frontend, ele é apenas backend onde é possivel utilizar em programas que dão suporte ás requisições feitas pela API, como o postman. Por enquanto não pretendo fazer frontend para o projeto.
 
-<h3>
-Terceira:
-</h3>
-O modo como os módulos são chamados entre arquivos é o 'antigo' - exemplo: const express = require('express') - porém irei mudar conforme for atualizando o projeto, pode ficar tranquilo :)
-</section>
 
 
 
