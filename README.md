@@ -42,6 +42,7 @@ Dependências: mongoose, bcrypt, dotenv, jsonwebtoken, nodemon e express
  <h3>02/10/2023</h3> - Desenvolvimento do login e criação do token.
  <h3>02/10/2023</h3> - Desenvolvimento completo do conteúdo, faltando apenas organizar a estrutura - arquitetura do projeto.
  <h3>09/10/2023</h3> - Primeira parte da estrutura feita - dividindo o projeto em vários arquivos, cada um com sua função.
+ <h3>10/10/2023</h3> - Segunda parte da estrutura feita - o projeto acaba aqui, cada arquivo possui sua função, trazendo um código muito mais limpo e legível.
 </section>
 
 <section>
