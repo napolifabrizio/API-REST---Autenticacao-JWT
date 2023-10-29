@@ -53,10 +53,10 @@ Dependências: mongoose, bcrypt, dotenv, jsonwebtoken, nodemon e express
     No projeto, contém um arquivo .env, onde ele guarda informações de login do administrador, porém esse arquivo está oculto no .gitignore
     <br>
     
-    <h3>
-    Segunda:
-    </h3>
-    O projeto não possui frontend, ele é apenas backend onde é possivel utilizar em programas que dão suporte ás requisições feitas pela API, como o postman. Por enquanto não pretendo fazer frontend para o projeto.
+<h3>
+Segunda:
+</h3>
+O projeto não possui frontend, ele é apenas backend onde é possivel utilizar em programas que dão suporte ás requisições feitas pela API, como o postman. Por enquanto não pretendo fazer frontend para o projeto.
     
 
 
