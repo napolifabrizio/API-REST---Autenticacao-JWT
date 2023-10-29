@@ -57,7 +57,11 @@ Dependências: mongoose, bcrypt, dotenv, jsonwebtoken, nodemon e express
 Segunda:
 </h3>
 O projeto não possui frontend, ele é apenas backend onde é possivel utilizar em programas que dão suporte ás requisições feitas pela API, como o postman. Por enquanto não pretendo fazer frontend para o projeto.
-    
+
+<h3>
+Terceira:
+</h3>
+O projeto foi criado testando as rotas, para conferir se está tudo certo, usando o aplicativo Postman.
 
 
 
