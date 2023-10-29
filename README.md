@@ -9,7 +9,7 @@
 Faaaalaaaa, primeiramente queria dizer que esse projeto funciona com uma coleção do banco de dados MongoDB.
 
 <p>
-O projeto 'Autenticação JWT - API REST' foi criado apenas como uma evolução do meu projeto anterior 'Biblioteca', onde esse projeto antigo é uma API REST, porém sem tecnologias como autentucação de usuário e criptografia, por exemplo. Seu propósito é continuar na evolução da minha criação de API's, ou seja, ele também é uma API REST, do mesmo formato que a anterior, pois com adições, melhorias e uma mudança na arquitetura. Não sei se vai funcionar como uma biblioteca, vou fazendo alterações conforme for desenvolvendo.
+O projeto é uma API REST (-_-) onde crio uma API normal com verificação. Ela faz a criação de usuários, onde confere se o email já possui cadastro, se não tiver, então uma conta é criada Na criação a senha literal não é guardada no banco, o que fica guardado é uma hash da senha e quando ele for logar, a aplicação compara a hash guardada no banco com a hash da senha que o usuário está colocando para logar. Onde cada funcionalidade acompanha uma rota http.
 </p><br>
 </section>
 
@@ -21,14 +21,14 @@ O projeto 'Autenticação JWT - API REST' foi criado apenas como uma evolução 
 
  2 - Criptografar sua senha, e descriptografar para autentucação.
 
- / Mais funcionalidades serão adicionadas conforme o desenvolvimento \
+ 3 - Criação do Token, para verificação.
 </p>
 </section>
 
 <section>
 <h2><b>Tecnologias Utilizadas</b></h2>
 <p>
-Esse projeto foi feito somente com javascript, usando o framework Express do NodeJs, e o banco de dados Mongo DB.
+Esse projeto foi feito somente com javascript, usando o framework Express do NodeJs e o banco de dados Mongo DB.
 
 Dependências: mongoose, bcrypt, dotenv, jsonwebtoken, nodemon e express
 
