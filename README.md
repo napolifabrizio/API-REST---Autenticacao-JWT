@@ -37,7 +37,7 @@ Dependências: mongoose, bcrypt, dotenv, jsonwebtoken, nodemon e express
 
 <section>
 <h2>Atualizações</h2>
- <h3>27/09/2023</h3> - Começando implementação do cadastro de usuários.
+ <h4>27/09/2023</h4> - Começando implementação do cadastro de usuários.
  <h3>29/09/2023</h3> - Cadastro feito, criptografia das senhas e começando o login dos usuários.
  <h3>02/10/2023</h3> - Desenvolvimento do login e criação do token.
  <h3>02/10/2023</h3> - Desenvolvimento completo do conteúdo, faltando apenas organizar a estrutura - arquitetura do projeto.
